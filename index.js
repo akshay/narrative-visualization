@@ -232,7 +232,7 @@ async function drawVisualizations() {
                 },
                 data: {
                     date: '2021/07/26',
-                    [key]: 139.06442
+                    [key]: 136
                 },
                 dy: 70,
                 dx: -140
@@ -248,10 +248,10 @@ async function drawVisualizations() {
                 },
                 data: {
                     date: '2018/10/10',
-                    [key]: 10.74260269
+                    [key]: 13
                 },
-                dy: 130,
-                dx: -10
+                dy: 200,
+                dx: 40
             });
             break;
     }
