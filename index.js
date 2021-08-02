@@ -266,7 +266,7 @@ async function drawVisualizations() {
     const parseTime = d3.timeParse(timeFormatStr);
     const timeFormat = d3.timeFormat(timeFormatStr);
     const valueFn = d => +d[key];
-    const data = await d3.csv('narrative-visualization/' + (index === 0 ? crypto : CSV[index]) + '.csv', {
+    const data = await d3.csv((index === 0 ? crypto : CSV[index]) + '.csv', {
             mode: 'no-cors'
         },
         d => {
