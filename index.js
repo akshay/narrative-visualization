@@ -276,7 +276,7 @@ async function drawVisualizations() {
             };
         });
     const indexed = {};
-    data.forEach(d => indexed[d.date] = valueFn(d));
+    data.forEach(d => indexed[timeFormat(d.date)] = valueFn(d));
 
     const x = d3.scaleTime().range([0, chartWidth() - margin]).domain(d3.extent(data, d => d.date));
     const y = d3.scaleLinear().range([height, 0]).domain(d3.extent(data, d => valueFn(d)));
