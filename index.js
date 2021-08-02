@@ -247,7 +247,7 @@ async function drawVisualizations() {
                     label: "1 Transaction = 82 grams, or around 18000 VISA transactions"
                 },
                 data: {
-                    date: '2019/10/10',
+                    date: '2018/10/10',
                     [key]: 10.74260269
                 },
                 dy: 130,
@@ -266,7 +266,7 @@ async function drawVisualizations() {
     const parseTime = d3.timeParse(timeFormatStr);
     const timeFormat = d3.timeFormat(timeFormatStr);
     const valueFn = d => +d[key];
-    const data = await d3.csv('https://delirious-letter.surge.sh/' + (index === 0 ? crypto : CSV[index]) + '.csv', {
+    const data = await d3.csv('narrative-visualization/' + (index === 0 ? crypto : CSV[index]) + '.csv', {
             mode: 'no-cors'
         },
         d => {
